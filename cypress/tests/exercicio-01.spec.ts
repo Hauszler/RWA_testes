@@ -1,4 +1,4 @@
-import { userInfo } from 'os'
+
 import UserData from '../fixtures/userdata.json'
 import LoginPage from '../pages/loginPage'
 import HomePage from '../pages/homePage'
@@ -31,18 +31,19 @@ describe('Tentar fazer login com credenciais inválidas', () => {
 
 
 describe('Registro de novo usuário com sucesso', () => {
-  it('Deve registrar um novo usuário com informações válidas', () => {
+  it.only('Deve registrar um novo usuário com informações válidas', () => {
     loginPage.accessLoginPage()
     singUpPage.accessSingUpPage()
     singUpPage.checkLocationSingUp()
     singUpPage.applyUserData(UserData.singUpData.firstName,UserData.singUpData.lastName,UserData.singUpData.username,UserData.singUpData.password, UserData.singUpData.confirmPassword)
     singUpPage.singUpBtn()
     loginPage.checkLocationLogin()
+    loginPage.loginWhithUser()
   });
 
 
   describe('Tentar registrar um novo usuário com informações incompletas', () => {
-    it.only('Deve exibir mensagens de erro ao tentar registrar um novo usuário sem preencher todas as informações obrigatórias', () => {
+    it('Deve exibir mensagens de erro ao tentar registrar um novo usuário sem preencher todas as informações obrigatórias', () => {
       loginPage.accessLoginPage()
       singUpPage.accessSingUpPage()
       singUpPage.checkLocationSingUp()

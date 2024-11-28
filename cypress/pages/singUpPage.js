@@ -11,6 +11,7 @@ class singUpPage {
             password: '#password',
             confirmPassword: '#confirmPassword',
             singUpBtn:'[data-test="signup-submit"]',
+            nextBtn: '[data-test="user-onboarding-next"]',
         }
     return selectors
     }
