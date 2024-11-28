@@ -74,6 +74,61 @@
       "balance": 49474,
       "createdAt": "2023-12-07T04:39:38.383Z",
       "modifiedAt": "2024-03-07T00:07:36.510Z"
+    },
+    {
+      "id": "kSm3jnao_",
+      "uuid": "59072fd1-ccca-43e8-a96f-a396493a1bd1",
+      "firstName": "André",
+      "lastName": "Hauszler",
+      "username": "Ovyni",
+      "password": "$2a$10$2MyUHsDcAfWANoWuI1/7Cu4WcOFsj2dLC8r8qRH68XitWvJ3.s93m",
+      "balance": 0,
+      "createdAt": "2024-11-28T02:25:35.682Z",
+      "modifiedAt": "2024-11-28T02:25:35.682Z"
+    },
+    {
+      "id": "LlB8iamU7",
+      "uuid": "718ee670-8f48-435e-9614-6a99885ca66a",
+      "firstName": "André",
+      "lastName": "Hauszler",
+      "username": "Ovyni",
+      "password": "$2a$10$G7.fbT4DdCr9HBKDT83yr.9g9110qGpDQvYd6SLbXXFg5IE7p5VD.",
+      "balance": 0,
+      "createdAt": "2024-11-28T02:28:10.732Z",
+      "modifiedAt": "2024-11-28T02:28:10.732Z"
+    },
+    {
+      "id": "DkZQo34Xv",
+      "uuid": "a0dbf121-ddae-4aa4-9775-ec4db884bd48",
+      "firstName": "André",
+      "lastName": "Hauszler",
+      "username": "Ovyni",
+      "password": "$2a$10$3NNxUmQX7/CLOJHtG.hEFewDWbiNssN6SZ3fA7ibXUzz4dWuv3Mre",
+      "balance": 0,
+      "createdAt": "2024-11-28T02:28:27.900Z",
+      "modifiedAt": "2024-11-28T02:28:27.900Z"
+    },
+    {
+      "id": "ZB_L0_7Ey",
+      "uuid": "750d2c62-f44b-4b03-9421-d215fc3d1f2e",
+      "firstName": "André",
+      "lastName": "Hauszler",
+      "username": "Ovyni",
+      "password": "$2a$10$fGgeQMjZQ9cilnXgwJpXDeYgv9aQr8qTuvtjXTEelTLLqrdHwFdSS",
+      "balance": 0,
+      "createdAt": "2024-11-28T02:28:53.750Z",
+      "modifiedAt": "2024-11-28T02:28:53.750Z"
+    },
+    {
+      "id": "nMoZapC6a",
+      "uuid": "d690982b-7ff9-41c8-9f47-27e1c67b6117",
+      "firstName": "",
+      "lastName": "Hauszler",
+      "username": "Ovyni",
+      "password": "$2a$10$vj9FicLRIza3YSs3Me/8rOUM3..SwqGSyFs2et89vaw0FfCCvv3Bu",
+      "balance": 0,
+      "createdAt": "2024-11-28T02:34:21.761Z",
+      "modifiedAt": "2024-11-28T02:34:21.761Z"
     }
   ],
   "contacts": [

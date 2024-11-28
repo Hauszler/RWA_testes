@@ -1,0 +1,20 @@
+{
+    "userSuccess":{
+        "username": "Dina20",
+        "password": "s3cret"
+    },
+    "userFail":{
+        "username": "teste",
+        "password": "teste"
+    },
+
+    "singUpData":{
+        "firstName": "André",
+        "lastName": "Hauszler",
+        "username": "Ovyni",
+        "password": "Ovyni93",
+        "confirmPassword": "Ovyni93",
+        "empityField": ""
+
+    }
+}
