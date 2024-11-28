@@ -33,12 +33,13 @@ describe('Tentar visualizar o histórico de transações sem transações anteri
     //login com novo usuario
     loginPage.loginWhithUser(UserData.singUpData.username,UserData.singUpData.password)
     //as linhas abaixo precisam ser comentadas caso não seja a primeira vez que rodar o teste
-    //cy.get('[data-test="user-onboarding-next"]').click()
-    //cy.get('#bankaccount-bankName-input').type('Inter')
-    //cy.get('#bankaccount-routingNumber-input').type('123123123')
-    //cy.get('#bankaccount-accountNumber-input').type('123456789')
-    //cy.get('[data-test="bankaccount-submit"]').click()
-    //cy.get('[data-test="bankaccount-submit"]').click()
+    cy.get('[data-test="user-onboarding-next"]').click()
+    cy.get('#bankaccount-bankName-input').type('Inter')
+    cy.get('#bankaccount-routingNumber-input').type('123123123')
+    cy.get('#bankaccount-accountNumber-input').type('123456789')
+    cy.get('[data-test="bankaccount-submit"]').click()
+    cy.get('[data-test="bankaccount-submit"]').click()
+    //****** */
     //checando transações
     homepage.myTransition()
     cy.get('.css-mpyo7s-MuiTypography-root').contains('No Transactions')
