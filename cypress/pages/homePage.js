@@ -5,6 +5,7 @@ class homePage {
             newtTransitionBtn: '[data-test="nav-top-new-transaction"]',
             myTransitionBtn:'[data-test="nav-personal-tab"]',
             transitionList: '[data-test="transaction-list"]',
+            
         }
         return selectors
     }
@@ -22,6 +23,7 @@ class homePage {
     seesTable(){
         cy.get(this.selectorList().newtTransitionBtn).should('be.visible')
     }
+    
 }
 
 export default homePage

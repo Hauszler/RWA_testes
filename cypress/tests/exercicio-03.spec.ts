@@ -2,11 +2,14 @@ import UserData from '../fixtures/userdata.json'
 import LoginPage from '../pages/loginPage'
 import HomePage from '../pages/homePage'
 import SingUpPage from '../pages/singUpPage'
+import GetStartedPage from '../pages/getStartedPage'
+import NewBankAccount from '../fixtures/newbankaccount.json'
 
 
 const loginPage = new LoginPage()
 const homepage = new HomePage()
 const singUpPage = new SingUpPage()
+const getStartedPage = new GetStartedPage()
 
 
 
@@ -33,16 +36,15 @@ describe('Tentar visualizar o histórico de transações sem transações anteri
     //login com novo usuario
     loginPage.loginWhithUser(UserData.singUpData.username,UserData.singUpData.password)
     //as linhas abaixo precisam ser comentadas caso não seja a primeira vez que rodar o teste
-    cy.get('[data-test="user-onboarding-next"]').click()
-    cy.get('#bankaccount-bankName-input').type('Inter')
-    cy.get('#bankaccount-routingNumber-input').type('123123123')
-    cy.get('#bankaccount-accountNumber-input').type('123456789')
-    cy.get('[data-test="bankaccount-submit"]').click()
-    cy.get('[data-test="bankaccount-submit"]').click()
+    getStartedPage.nextBtn()
+    getStartedPage.newBankData(NewBankAccount.SuccessData.bankName,NewBankAccount.SuccessData.routingNumber,NewBankAccount.SuccessData.accountNumber)
     //****** */
     //checando transações
     homepage.myTransition()
     cy.get('.css-mpyo7s-MuiTypography-root').contains('No Transactions')
-
+    // apos feito uma vez tem que fechar e abrir o servido para funcionar.... como posso melhorar esse teste?
+    
   });
 });
+
+

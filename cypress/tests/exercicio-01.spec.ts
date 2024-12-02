@@ -3,11 +3,14 @@ import UserData from '../fixtures/userdata.json'
 import LoginPage from '../pages/loginPage'
 import HomePage from '../pages/homePage'
 import SingUpPage from '../pages/singUpPage'
+import GetStartedPage from '../pages/getStartedPage'
+
 
 
 const loginPage = new LoginPage()
 const homepage = new HomePage()
 const singUpPage = new SingUpPage()
+const getStartedPage = new GetStartedPage()
 
 
 
@@ -38,11 +41,12 @@ describe('Registro de novo usuário com sucesso', () => {
     singUpPage.applyUserData(UserData.singUpData.firstName,UserData.singUpData.lastName,UserData.singUpData.username,UserData.singUpData.password, UserData.singUpData.confirmPassword)
     singUpPage.singUpBtn()
     loginPage.checkLocationLogin()
-    loginPage.loginWhithUser()
+    loginPage.loginWhithUser(UserData.singUpData.username,UserData.singUpData.password)
+    getStartedPage.checkNewUser
   });
+});
 
-
-  describe('Tentar registrar um novo usuário com informações incompletas', () => {
+describe('Tentar registrar um novo usuário com informações incompletas', () => {
     it('Deve exibir mensagens de erro ao tentar registrar um novo usuário sem preencher todas as informações obrigatórias', () => {
       loginPage.accessLoginPage()
       singUpPage.accessSingUpPage()
@@ -53,6 +57,8 @@ describe('Registro de novo usuário com sucesso', () => {
       cy.get('#firstName-helper-text')
     });
   });
-});
+
+  
+
 
 
