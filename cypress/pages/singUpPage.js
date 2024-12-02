@@ -41,6 +41,8 @@ class singUpPage {
     singUpBtnInvisivble(){
         cy.get(this.selectorList().singUpBtn).should('be.disabled')
     }
+
+    
 }
 
 export default singUpPage
