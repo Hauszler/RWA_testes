@@ -42,7 +42,8 @@ describe('Tentar visualizar o histórico de transações sem transações anteri
     //checando transações
     homepage.myTransition()
     cy.get('.css-mpyo7s-MuiTypography-root').contains('No Transactions')
-
+    // apos feito uma vez tem que fechar e abrir o servido para funcionar.... como posso melhorar esse teste?
+    
   });
 });
 
